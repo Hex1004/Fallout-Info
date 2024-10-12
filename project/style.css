@@ -1,0 +1,226 @@
+/* General Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
+}
+html, body {
+    height: 100%;
+    margin: 0;
+    padding: 0;
+    background-color: #000000;
+    overflow-y: auto;
+}
+
+/* Background container */
+.bg {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-image: url("Fallout\ -\ I\ Don\'t\ Want\ To\ Set\ The\ World\ On\ Fire.gif"); /* Your image here */
+    background-size: cover;
+    background-position: center center;
+    background-repeat: no-repeat;
+    filter: blur(4px);
+    -webkit-filter: blur(4px);
+    z-index: -1; /* Ensure the blurred background stays behind the content */
+}
+
+/* Other content styling */
+body {
+    position: relative;
+    z-index: 1;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+    width: 95%;
+    margin: 2% auto;
+    background-color: rgba(255, 255, 255, 0.7); /* Semi-transparent to make the text readable over blur */
+    border-radius: 35px;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+    font-family: 'Merienda', sans-serif;
+    overflow-y: auto;
+}
+
+/* Logo Styling - Positioned at the top left corner */
+.image {
+    position: absolute;
+    top: 10px;
+    left: 20px;
+}
+
+.image img {
+    width: 100px; /* Adjust size as needed */
+    height: 100px;
+    border-radius: 50%; /* Make the image rounded */
+    border: 2px solid #ffffff; /* 2px border for the logo */
+}
+
+/* Menu styling - centered at the top */
+.menu {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 20px;
+    z-index: 10; /* Ensure the menu is always on top */
+}
+
+.menu a {
+    text-decoration: none;
+    color: white;
+    font-size: 1.2rem;
+    padding: 10px 20px;
+    background-color: #000000;
+    border-radius: 5px;
+    transition: background-color 0.3s ease;
+    text-align: center;
+    font-family: "Gluten", sans-serif;
+    margin: 0 10px; /* Add space between the menu items */
+}
+
+.menu a:hover {
+    background-color: #0056b3;
+}
+
+/* Typing effect for h1 - Place h1 directly below the menu */
+h1{
+    margin-top: 349px;
+    font-family: "Tilt Warp", cursive;
+    text-shadow: #ffffff;
+    font-size: 100px;
+}
+
+
+/* Description text */
+p {
+    font-size: 40px;
+    font-weight: normal;
+    color: #fafafa;
+    margin-bottom: 30px;
+    line-height: 1.6;
+    font-family: "Gluten", sans-serif;
+    text-shadow: 4px 4px 5px black;
+}
+
+/* Video styling */
+video {
+    margin-top: 30px;
+    width: 80%; /* Set the width to 80% of the parent container */
+    max-width: 800px; /* Maximum width */
+    height: auto; /* Automatically adjusts height to maintain aspect ratio */
+    border-radius: 8px;/* Optional: Add rounded corners for aesthetics */
+}
+
+
+/* Footer */
+footer {
+    display: flex;
+    justify-content: center;
+    align-items: center; /* Center footer text */
+    padding: 10px;
+    background-color: #000000;
+    width: 100%; /* Full width */
+    color: #ffffff;
+    flex-shrink: 0; /* Ensure footer stays at the bottom */
+    position: fixed;
+    bottom: 0; /* Stick to the bottom */
+}
+
+.footer_text {
+    color: #ffffff;
+}
+
+/* Button Styling */
+.button button {
+    margin-top: 20px; /* Space between video and button */
+    border-radius: 10px;
+    background-color: #000000;
+    color: #ffffff;
+    font-size: 35px;
+    height: 60px;
+    width: 200px;
+    font-family: "League Gothic", sans-serif;
+}
+
+/* Text below the video */
+.text {
+    margin-top: 20px;
+    font-size: 17px;
+    font-weight: normal;
+    color: #fcfcfc;
+    text-shadow: 4px 4px 5px black;
+    font-family: "Gluten", sans-serif;
+}
+
+/* Responsive Styling */
+@media (max-width: 768px) {
+    h1 {
+        font-size: 2.5rem;
+    }
+
+    p {
+        font-size: 1rem;
+    }
+
+    .calorie-form button {
+        font-size: 1.2rem;
+    }
+
+    .button button {
+        font-size: 28px; /* Reduce button size on smaller screens */
+        height: 50px;
+        width: 180px;
+    }
+}
+
+.nutrition {
+    font-size: 20px;
+    text-shadow: 2px 2px 5px black; /* Adjusted for subtle shadow effect */
+    color: #ffffff; /* White text to contrast with the background */
+    font-weight: normal;
+    text-align: center;
+    margin-top: 100px;
+    margin-bottom: 200px;
+    padding: 40px; /* Padding inside the border */
+    border: 2px solid #ffffff; /* White border */
+    border-radius: 10px; 
+    background-color: rgba(0, 0, 0, 0.5); 
+    width: 80%; /* Adjust width as needed */
+    margin-left: auto;
+    margin-right: auto; 
+}
+.text{
+    font-weight: normal;
+}
+.calories {
+    font-size: 20px;
+    text-shadow: 2px 2px 5px black; /* Adjusted for subtle shadow effect */
+    color: #ffffff; /* White text to contrast with the background */
+    font-weight: normal;
+    text-align: center;
+    margin-top: 90px;
+    margin-bottom: 200px;
+    padding: 40px; /* Padding inside the border */
+    border: 2px solid #ffffff; /* White border */
+    border-radius: 10px; 
+    background-color: rgba(0, 0, 0, 0.5); 
+    width: 100%; /* Adjust width as needed */
+    margin-left: auto;
+    margin-right: auto; 
+}
+
+.caloriesp{
+    font-weight: normal;
+    font-size: 15px;
+    font-family: "Gluten", sans-serif;
+}
+.caloriesh1{
+    font-size: 25px;
+    color: #ffffff;
+    font-family: "Gluten", sans-serif;
+}
+
